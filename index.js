@@ -7,6 +7,8 @@ const sendEmail = require("./mailer");
 const generateMonthlyReport = require("./generateReport"); // Report generation function
 const User = require("./models/user");
 
+require("dotenv").config();
+
 async function getAllUsers() {
   const user = await User.find({});
 

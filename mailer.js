@@ -1,4 +1,5 @@
 const nodemailer = require("nodemailer");
+require("dotenv").config();
 
 // Create reusable transporter object using Gmail's SMTP server
 const transporter = nodemailer.createTransport({

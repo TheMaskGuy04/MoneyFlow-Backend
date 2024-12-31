@@ -2,6 +2,8 @@ const User = require("../models/user");
 const bcrypt = require("bcrypt");
 const { setUser, getUser } = require("../services/auth");
 
+require("dotenv").config();
+
 async function handleUserSignup(req, res) {
   const { name, email, password } = req.body;
 
