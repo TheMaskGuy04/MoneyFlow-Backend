@@ -40,7 +40,7 @@ connectToMongoDB(process.env.MONGO_URL).then(() =>
 );
 
 const corsOptions = {
-  origin: "https://moneyflow-frontend-one.vercel.app/",
+  origin: "https://moneyflow-frontend-one.vercel.app",
   credentials: true, //access-control-allow-credentials:true
   optionSuccessStatus: 200,
 };
