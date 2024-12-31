@@ -42,7 +42,7 @@ async function handleUserLogin(req, res) {
       const token = setUser(user);
       res.cookie("tokenId", token, {
         httpOnly: true, // Prevents client-side JavaScript from accessing the cookie
-        // secure: true, // Ensures cookies are sent only over HTTPS
+        secure: true, // Ensures cookies are sent only over HTTPS
         sameSite: "None", // Allows cross-site cookies
       });
 
